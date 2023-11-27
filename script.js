@@ -63,7 +63,6 @@ function resetPlaylist() {
     }
 }
 resetButton.addEventListener("click", resetPlaylist);
-form.addEventListener("submit", addSong);
 
 
 
