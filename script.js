@@ -58,7 +58,11 @@ function resetPlaylist() {
     songsContainer.innerHTML = "";
     if (songs.length === 0) {
         noSongsElement.classList.remove("no-songs_hidden");
+        resetButton.setAttribute("disabled", true);
+        resetButton.classList.add("form__submit-btn_disabled");
     } else {
+        noSongsElement.classList.add("no-songs_hidden");
+        resetButton.classList.remove("form__submit-btn_disabled");
         noSongsElement.classList.add("no-songs_hidden");
     }
 }
